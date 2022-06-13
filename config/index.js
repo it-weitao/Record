@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'record',
   date: '2022-6-13',
@@ -14,6 +16,9 @@ const config = {
   copy: {
     patterns: [],
     options: {},
+  },
+  alias: {
+    src: path.resolve(__dirname, '..', 'src'),
   },
   framework: 'react',
   mini: {
